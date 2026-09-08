@@ -35,11 +35,11 @@ export const skillsCategories = [
     skills: [
       "Large Language Models (LLMs)",
       "RAG Architecture",
+      "Hugging Face Transformers",
       "Computer Vision (OpenCV)",
       "YOLOv8 Object Detection",
       "TensorFlow / Keras",
-      "Transformers & BERT",
-      "NLP (TF-IDF, Tokenization)",
+      "NLP & Sentiment Analysis",
       "Scikit-learn",
       "Predictive Analytics",
       "PyTorch Basics"
@@ -153,29 +153,41 @@ export const projectsData = [
   {
     id: "complaint-system",
     title: "AI-Powered Complaint Management System",
-    subtitle: "Enterprise NLP & Intelligent Ticket Routing",
+    subtitle: "Full-Stack AI Support Intelligence & SLA Automation",
     date: "April 2026",
     category: "NLP & Full Stack",
-    badge: "NLP & Automation",
+    badge: "NLP & RAG System",
     image: "/images/complaint_system.jpg",
     description:
-      "Enterprise NLP web application using Python, Flask, TF-IDF, BERT, and Multinomial Naive Bayes with Transformers to automatically classify customer complaints and route them with automated Gmail notifications.",
+      "Full-stack AI-powered complaint management system built with React, FastAPI, PostgreSQL, NLP, Hugging Face, and pgvector. Delivers intelligent complaint classification, sentiment analysis, duplicate detection, and team routing, coupled with Ollama/Groq RAG-assisted responses, SLA tracking, analytics, and Gmail API integration.",
     highlights: [
-      "Dual NLP classification pipeline marrying TF-IDF + Naive Bayes baseline with fine-tuned BERT Transformers",
-      "Automatic department assignment and priority triage across multi-class customer tickets",
-      "Real-time database synchronization and state persistence using Firebase Firestore",
-      "Automated email notifications and acknowledgment dispatch through Google Gmail API"
+      "Intelligent complaint classification & sentiment analysis using Hugging Face NLP transformers",
+      "Semantic vector search via PostgreSQL & pgvector for accurate duplicate ticket detection",
+      "RAG-powered AI-assisted customer response drafting with runtime Ollama and Groq models",
+      "Automated team routing, SLA resolution tracking, analytics dashboard, and Gmail API alerts"
     ],
-    tech: ["Python", "Flask", "BERT", "Transformers", "TF-IDF", "Naive Bayes", "Firebase Firestore", "Gmail API"],
+    tech: [
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector",
+      "Hugging Face",
+      "NLP",
+      "Ollama",
+      "Groq",
+      "RAG",
+      "Gmail API"
+    ],
     architecture: {
       overview:
-        "Customer grievances received via the web portal are preprocessed and vectorized. The classification ensemble predicts the responsible department with high confidence, saves the ticket to Firestore, and notifies stakeholders via Gmail API.",
+        "An enterprise support orchestration engine where grievances are vectorized via Hugging Face models into PostgreSQL pgvector. The system assesses sentiment, prevents duplicate processing through cosine similarity search, routes tickets to specialized queues, drafts contextual resolutions using RAG, and tracks SLA thresholds with automated notifications.",
       pipeline: [
-        "Text normalization, stop-word removal, and BERT tokenization",
-        "Ensemble classification with BERT Transformer and Naive Bayes confidence voting",
-        "Automated routing to Department Queues (Billing, Support, Logistics, Technical)",
-        "State persistence and lifecycle tracking in Firebase Firestore",
-        "Gmail API integration triggering instant email confirmation with tracking numbers"
+        "Ticket intake via React web interface or automated Gmail API listeners",
+        "Hugging Face tokenization, intent classification, and sentiment scoring",
+        "pgvector cosine similarity matching to identify existing or duplicate complaints",
+        "Smart routing to appropriate department teams with SLA deadline assignment",
+        "RAG-driven draft response generation powered by Ollama and ultra-fast Groq inference",
+        "Operational analytics tracking and automated status updates sent to customers via Gmail API"
       ]
     }
   },
