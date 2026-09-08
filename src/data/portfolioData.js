@@ -4,7 +4,7 @@ export const personalInfo = {
   subtitle: "M.Sc Decision and Computing Sciences",
   phone: "+91 9489766467",
   email: "ranjithsabapathy2004@gmail.com",
-  linkedin: "https://www.linkedin.com/in/ranjith-lk",
+  linkedin: "https://www.linkedin.com/in/ranjith-lk-8372b8254/",
   github: "https://github.com/Ranjith352",
   githubUsername: "Ranjith352",
   linkedinName: "Ranjith LK",

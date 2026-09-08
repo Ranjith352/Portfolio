@@ -64,7 +64,7 @@ npm run build
 ## 📬 Contact & Connect
 - **Email**: [ranjithsabapathy2004@gmail.com](mailto:ranjithsabapathy2004@gmail.com)
 - **Phone**: +91 9489766467
-- **LinkedIn**: [Ranjith LK](https://www.linkedin.com/in/ranjith-lk)
+- **LinkedIn**: [Ranjith LK](https://www.linkedin.com/in/ranjith-lk-8372b8254/)
 - **GitHub**: [@Ranjith352](https://github.com/Ranjith352)
 
 ---

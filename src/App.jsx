@@ -21,7 +21,7 @@ import {
 
 import Navbar from './components/Navbar';
 import HeroCanvas from './components/HeroCanvas';
-import TerminalWidget from './components/TerminalWidget';
+import AcademicSpotlight from './components/AcademicSpotlight';
 import ProjectModal from './components/ProjectModal';
 import ContactSection from './components/ContactSection';
 
@@ -249,11 +249,11 @@ export default function App() {
         </div>
       </div>
 
-      {/* About Section */}
+      {/* About & Academic Focus Section */}
       <section id="about" className="section">
         <div className="container">
           <div className="section-header">
-            <div className="section-tag">About Me</div>
+            <div className="section-tag">About & Academics</div>
             <h2 className="section-title">
               Driven by <span className="gradient-text">Curiosity</span> & Practical Impact
             </h2>
@@ -281,8 +281,8 @@ export default function App() {
               </div>
             </div>
 
-            {/* Interactive Terminal */}
-            <TerminalWidget />
+            {/* Academic Spotlight Component */}
+            <AcademicSpotlight />
           </div>
         </div>
       </section>
