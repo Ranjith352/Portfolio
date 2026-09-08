@@ -2,10 +2,13 @@
 
 > Modern, interactive, and responsive portfolio web application engineered with React, Vite, and custom CSS design system.
 
+[![Live Demo](https://img.shields.io/badge/Live_Portfolio-Vercel-success?style=for-the-badge&logo=vercel)](https://portfolio-brown-nine-99.vercel.app)
 ![Portfolio Banner](https://img.shields.io/badge/Status-Active-emerald?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5-purple?style=for-the-badge&logo=vite)
 ![FastAPI](https://img.shields.io/badge/FastAPI-RAG-teal?style=for-the-badge&logo=fastapi)
+
+🔗 **Live Website**: [https://portfolio-brown-nine-99.vercel.app](https://portfolio-brown-nine-99.vercel.app)
 
 ## 👤 About Ranjith LK
 - **Degree**: M.Sc Decision and Computing Sciences (2022 – 2027) | **CGPA: 7.9**
