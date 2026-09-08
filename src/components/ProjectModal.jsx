@@ -21,6 +21,14 @@ export default function ProjectModal({ project, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        {/* Modal Banner Image */}
+        {project.image && (
+          <div className="modal-banner-box">
+            <img src={project.image} alt={project.title} className="modal-banner-img" />
+            <div className="modal-banner-overlay" />
+          </div>
+        )}
+
         <div className="modal-header">
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '0.5rem' }}>
             <span className="project-tag">{project.badge}</span>

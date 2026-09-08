@@ -144,40 +144,61 @@ export default function App() {
         <HeroCanvas />
         <div className="container">
           <div className="hero-content">
-            <div className="status-pill">
-              <span className="pulse-dot" />
-              <span>Available for Opportunities • AI & Full-Stack</span>
-            </div>
+            <div className="hero-layout-grid">
+              {/* Left Column: Hero Copy */}
+              <div>
+                <div className="status-pill">
+                  <span className="pulse-dot" />
+                  <span>Available for Opportunities • AI & Full-Stack</span>
+                </div>
 
-            <h1 className="hero-name">
-              Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
-            </h1>
+                <h1 className="hero-name">
+                  Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
+                </h1>
 
-            <div className="typewriter-wrapper">
-              <span>{currentText}</span>
-              <span className="typewriter-cursor">|</span>
-            </div>
+                <div className="typewriter-wrapper">
+                  <span>{currentText}</span>
+                  <span className="typewriter-cursor">|</span>
+                </div>
 
-            <p className="hero-description">
-              Bridging cutting-edge <strong>Artificial Intelligence</strong> with robust, scalable <strong>Full-Stack Architecture</strong>. Currently pursuing <strong>M.Sc in Decision and Computing Sciences</strong> (CGPA: 7.9) with proven experience architecting RAG pipelines, deep learning computer vision, and high-performance web systems.
-            </p>
+                <p className="hero-description">
+                  Bridging cutting-edge <strong>Artificial Intelligence</strong> with robust, scalable <strong>Full-Stack Architecture</strong>. Currently pursuing <strong>M.Sc in Decision and Computing Sciences</strong> (CGPA: 7.9) with proven experience architecting RAG pipelines, deep learning computer vision, and high-performance web systems.
+                </p>
 
-            <div className="hero-cta-group">
-              <a href="#projects" className="btn btn-primary">
-                <span>Explore Flagship Projects</span>
-                <ChevronRight size={18} />
-              </a>
-              <a
-                href={personalInfo.resumeUrl}
-                download="Ranjith_LK_Resume.pdf"
-                className="btn btn-outline-cyan"
-              >
-                <FileDown size={18} />
-                <span>Download Resume</span>
-              </a>
-              <a href="#contact" className="btn btn-secondary">
-                <span>Get In Touch</span>
-              </a>
+                <div className="hero-cta-group">
+                  <a href="#projects" className="btn btn-primary">
+                    <span>Explore Flagship Projects</span>
+                    <ChevronRight size={18} />
+                  </a>
+                  <a
+                    href={personalInfo.resumeUrl}
+                    download="Ranjith_LK_Resume.pdf"
+                    className="btn btn-outline-cyan"
+                  >
+                    <FileDown size={18} />
+                    <span>Download Resume</span>
+                  </a>
+                  <a href="#contact" className="btn btn-secondary">
+                    <span>Get In Touch</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column: High-End Avatar Card */}
+              <div className="hero-avatar-wrapper">
+                <div className="hero-avatar-glow" />
+                <div className="hero-avatar-frame">
+                  <img
+                    src={personalInfo.avatar}
+                    alt={personalInfo.name}
+                    className="hero-avatar-img"
+                  />
+                  <div className="hero-avatar-badge">
+                    <Sparkles size={15} color="#06b6d4" />
+                    <span>AI & Full Stack Engineer</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Quick highlight cards */}
@@ -362,6 +383,19 @@ export default function App() {
             {filteredProjects.map((proj) => (
               <div key={proj.id} className="project-card">
                 <div>
+                  {/* Project Image Banner */}
+                  {proj.image && (
+                    <div className="project-image-box" onClick={() => setSelectedProject(proj)} style={{ cursor: 'pointer' }}>
+                      <img
+                        src={proj.image}
+                        alt={proj.title}
+                        className="project-card-image"
+                        loading="lazy"
+                      />
+                      <div className="project-image-overlay" />
+                    </div>
+                  )}
+
                   <div className="project-meta-row">
                     <span className="project-tag">{proj.badge}</span>
                     <span className="project-date">{proj.date}</span>

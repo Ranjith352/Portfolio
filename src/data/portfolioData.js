@@ -10,6 +10,7 @@ export const personalInfo = {
   linkedinName: "Ranjith LK",
   location: "Tamil Nadu, India",
   resumeUrl: "/Ranjith_LK_Resume.pdf",
+  avatar: "/images/ranjith_avatar.jpg",
   bio: "Passionate and motivated AI Engineer & Full Stack Developer pursuing M.Sc in Decision and Computing Sciences. Eager to solve real-world challenges through intelligent automation, computer vision, RAG-powered LLMs, and robust full-stack architecture. Known for strong adaptability, rapid problem-solving, and a continuous learning mindset.",
   summaryBullets: [
     "Specialized in Generative AI, RAG Systems, and Computer Vision",
@@ -98,6 +99,7 @@ export const projectsData = [
     date: "June 2026",
     category: "GenAI & LLMs",
     badge: "Flagship GenAI",
+    image: "/images/lenny_growth_assistant.jpg",
     description:
       "Full-stack AI conversational assistant using FastAPI, React, PostgreSQL, and RAG over Lenny's Podcast transcripts. Features runtime LLM provider switching, pgvector semantic search, and dynamic Markdown/HTML artifact generation.",
     highlights: [
@@ -126,6 +128,7 @@ export const projectsData = [
     date: "Apr 2025",
     category: "Computer Vision",
     badge: "Computer Vision",
+    image: "/images/pothole_detection.jpg",
     description:
       "Deep learning-based pothole detection system utilizing OpenCV, CNN (TensorFlow/Keras), and YOLOv8 for centimeter-accurate pothole classification and spatial localization with automated PDF reporting.",
     highlights: [
@@ -154,6 +157,7 @@ export const projectsData = [
     date: "April 2026",
     category: "NLP & Full Stack",
     badge: "NLP & Automation",
+    image: "/images/complaint_system.jpg",
     description:
       "Enterprise NLP web application using Python, Flask, TF-IDF, BERT, and Multinomial Naive Bayes with Transformers to automatically classify customer complaints and route them with automated Gmail notifications.",
     highlights: [
@@ -182,6 +186,7 @@ export const projectsData = [
     date: "May 2024",
     category: "Data Science",
     badge: "Predictive Analytics",
+    image: "/images/healthcare_prediction.jpg",
     description:
       "Predictive healthcare analytics platform built with Streamlit and MySQL. Delivers risk assessments, interactive visual analytics, and personalized health recommendations for patients and physicians.",
     highlights: [
